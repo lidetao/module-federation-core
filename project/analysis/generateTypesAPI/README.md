@@ -35,6 +35,15 @@
 - 错误处理流程
 - 性能考虑
 
+### 5. [插件集成分析](./plugin-integration.md)
+
+- `GenerateTypesPlugin` 如何调用 `generateTypesAPI`
+- 参数构造流程 (`normalizeGenerateTypesOptions`)
+- 前置处理（配置检查、资源信息获取、缓存检查）
+- 后置处理（文件输出、错误处理）
+- 生产环境与开发环境的差异
+- Webpack 钩子集成机制
+
 ## 快速导航
 
 ### 按主题查找
@@ -48,6 +57,7 @@
 
 - 查看 [实现细节分析](./implementation.md) 了解内部实现
 - 查看 [执行流程详解](./flow.md) 了解执行步骤
+- 查看 [插件集成分析](./plugin-integration.md) 了解 Webpack 插件如何调用
 
 **使用指南**:
 
@@ -96,3 +106,4 @@
 ## 更新日志
 
 - 2024-XX-XX: 初始版本，完成 `generateTypesAPI` 方法的全面分析
+- 2024-XX-XX: 新增插件集成分析文档，详细说明 `GenerateTypesPlugin` 的调用机制
